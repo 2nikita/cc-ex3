@@ -17,10 +17,10 @@ const GET_PRODUCT_NAME = { role: 'product', cmd: 'getProductName' };
 /**
  * Call Service Method
  */
-const getProductURL = function(productId){
+const getProductURL = function (productId) {
     return act(Object.assign({}, GET_PRODUCT_URL, { productId }));
 };
-const getProductName = function(productId){
+const getProductName = function (productId) {
     return act(Object.assign({}, GET_PRODUCT_NAME, { productId }));
 };
 module.exports = {

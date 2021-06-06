@@ -8,9 +8,10 @@ module.exports = function (options) {
     function productPrice(productID, respond) {
         for (var i = 0; i < mockData.length; i++) {
             var product = mockData[i];
-            if (product.product_id == productID) {
-                respond(null, { result: product.product_price });
+            if (product.product_id == productID.productId) {
+                var foundPrice = product.product_price;
             }
         }
+        respond(null, { result: foundPrice });
     }
 }
